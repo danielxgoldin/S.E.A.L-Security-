@@ -5,9 +5,11 @@ import Hero from "./Hero";
 import Industryexperiance from "./Industryexperiance";
 import Careers from "./Careers";
 import Services from "./Services";
-import Home from "./Home";
+import Business from "./Business";
 import AboutUs from "./AboutUs";
-import CardDeal from "./carddeals";
+
+
+
 
 export {
   Navbar,
@@ -15,10 +17,10 @@ export {
   Testimonials,
   Hero,
   Industryexperiance,
-  Home, 
+  Business, 
   Services,
   Careers,
   AboutUs,
-  CardDeal,
+  
 
 };

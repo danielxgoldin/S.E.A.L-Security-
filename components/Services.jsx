@@ -1,9 +1,10 @@
 import { features } from '../constants';
 import styles, { layout } from '../style';
 import Button from './button';
+import { seal, bg} from '../assets';
 
 const Services = () =>  (
-  <section id="services" className={layout.section}>
+  <section  id="services" className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
         You handle the business, <br className="sm:block hidden" /> we’ll handle
@@ -14,8 +15,15 @@ const Services = () =>  (
       This includes Uniformed Security Officer Services, Public Events, Private Security Services & Officer Training,
       Hotel and Resort Security, and High Value Targets.
       </p>
+    </div>
+    <div>
+      <Button styles={`mt-10 align center flex bottom`} />
+    </div>
 
-      <Button styles={`mt-10`} />
+    <div>
+      <video width="600" height="500" controls>
+        <source src={seal} type="video/mp4" />
+      </video>
     </div>
 
   </section>

@@ -1,23 +1,22 @@
 import {useState } from 'react'
 
-import {close, logo, menu } from '../assets';
+import {close, logo, menu, steel,} from '../assets';
 import {navLinks} from '../constants';
 
 
 const Navbar = () => {
   const [toggle, setToggle,] = useState(false);
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logo} alt="S.E.A.L Security" className="w-[160px] h-[40px]" />
+    <nav className=" w-full flex py-6 justify-between items-center navbar">
+      <img src={logo} alt="logo" className="photo" />
+      
 
-      <ul className="list-none sm:flex hidden justify-evenly items-center flex-1">
+      <ul style={{backgroundImage:`url(${steel})`}}className="list-none sm:flex hidden justify-evenly items-center flex-1">
           {navLinks.map((nav, index) => (
             <li
             key={nav.id}
-            className={`text-yellow-400 font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length 
-              - 1 ? 'mr-0' : 'mr=10'} text-white`}
-
-            >
+            className={`text-gold-400 font-bold font-normal cursor-pointer text-[16px] ${index === navLinks.length 
+              - 1 ? 'mr-0' : 'mr=10'} text-gold-400`}>
               <a href={`#${nav.id}`}> 
                 {nav.title}
               </a> 
@@ -61,7 +60,9 @@ const Navbar = () => {
 
       </div>
 
+
     </nav>
+    
   )
 }
 
